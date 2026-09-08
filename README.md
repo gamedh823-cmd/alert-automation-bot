@@ -1,7 +1,5 @@
 # 로그인 경보 자동화 봇
 
-> https://github.com/gamedh823-cmd/alert-automation-bot
-
 ## ① 무엇을 만들었나
 
 파이썬이 보낸 가상의 로그인 경보를 n8n이 스스로 판정(허용/거부)해서, 슬랙·디스코드·텔레그램 세 곳에 알리고, 게시판 서버의 REST API를 통해 MySQL에 기록까지 자동으로 남기는 봇입니다. 판정 결과는 웹 대시보드에서도 확인할 수 있습니다.
@@ -40,16 +38,20 @@
 **본인 기록 조회 API**<br>
 <img src="images/08_get_api.png" width="500">
 
-**REST API 인증/검증** (API 키 없이 → 401 · 필수값 누락 → 400)
+**REST API 인증/검증**
 
-<img src="images/09_no_key_401.png" width="380"> <img src="images/10_missing_field_400.png" width="380">
+| API 키 없이 → 401 | 필수값 누락 → 400 |
+|---|---|
+| <img src="images/09_no_key_401.png" width="380"> | <img src="images/10_missing_field_400.png" width="380"> |
 
 **n8n이 꺼져 있어도 죽지 않는 전송기**<br>
 <img src="images/11_n8n_down_error.png" width="600">
 
-**거부 기준 상수 변경 비교** (10 → 3, 레벨 3 기준: 왼쪽 허용 → 오른쪽 거부)
+**거부 기준 상수 변경 비교** (10 → 3, 레벨 3 기준)
 
-<img src="images/12_threshold_before.png" width="380"> <img src="images/13_threshold_after.png" width="380">
+| 기준 10일 때 → 허용 | 기준 3일 때 → 거부 |
+|---|---|
+| <img src="images/12_threshold_before.png" width="380"> | <img src="images/13_threshold_after.png" width="380"> |
 
 **Code 노드 언어 함정**<br>
 <img src="images/14_python_error.png" width="600">
