@@ -21,59 +21,44 @@
 
 ## ③ 기능 구현 화면
 
-**파이썬 전송기**
-![전송기 실행 성공](images/01_sender_success.png)
+**파이썬 전송기**<br>
+<img src="images/01_sender_success.png" width="600">
 
-**n8n 판정 노드 결과**
-![Code 노드 OUTPUT](images/02_code_output.png)
+**n8n 판정 노드 결과**<br>
+<img src="images/02_code_output.png" width="600">
 
-**n8n 워크플로우 전체 구조**
-![워크플로우 전체](images/03_workflow_full.png)
+**n8n 워크플로우 전체 구조**<br>
+<img src="images/03_workflow_full.png" width="700">
 
-**메신저 알림 도착**
+**메신저 알림 도착** (슬랙 · 디스코드 · 텔레그램)
 
-슬랙
-![슬랙](images/04_slack.png)
+<img src="images/04_slack.png" width="260"> <img src="images/05_discord.png" width="260"> <img src="images/06_telegram.png" width="260">
 
-디스코드
-![디스코드](images/05_discord.png)
+**MySQL 저장 결과**<br>
+<img src="images/07_mysql_select.png" width="700">
 
-텔레그램
-![텔레그램](images/06_telegram.png)
+**본인 기록 조회 API**<br>
+<img src="images/08_get_api.png" width="500">
 
-**MySQL 저장 결과**
-![MySQL SELECT](images/07_mysql_select.png)
+**REST API 인증/검증** (API 키 없이 → 401 · 필수값 누락 → 400)
 
-**본인 기록 조회 API**
-![GET API 응답](images/08_get_api.png)
+<img src="images/09_no_key_401.png" width="380"> <img src="images/10_missing_field_400.png" width="380">
 
-**REST API 인증/검증**
+**n8n이 꺼져 있어도 죽지 않는 전송기**<br>
+<img src="images/11_n8n_down_error.png" width="600">
 
-API 키 없이 → 401
-![401](images/09_no_key_401.png)
+**거부 기준 상수 변경 비교** (10 → 3, 레벨 3 기준: 왼쪽 허용 → 오른쪽 거부)
 
-필수값 누락 → 400
-![400](images/10_missing_field_400.png)
+<img src="images/12_threshold_before.png" width="380"> <img src="images/13_threshold_after.png" width="380">
 
-**n8n이 꺼져 있어도 죽지 않는 전송기**
-![n8n 다운 시 에러 처리](images/11_n8n_down_error.png)
+**Code 노드 언어 함정**<br>
+<img src="images/14_python_error.png" width="600">
 
-**거부 기준 상수 변경 비교** (10 → 3)
+**보안 대시보드 (심화 S1)**<br>
+<img src="images/15_dashboard.png" width="600">
 
-기준 10일 때 (레벨 3 → 허용)
-![before](images/12_threshold_before.png)
-
-기준 3일 때 (레벨 3 → 거부)
-![after](images/13_threshold_after.png)
-
-**Code 노드 언어 함정**
-![Python 실행 오류](images/14_python_error.png)
-
-**보안 대시보드 (심화 S1)**
-![대시보드](images/15_dashboard.png)
-
-**n8n 실행 기록 (게시판 저장 성공)**
-![Executions](images/16_n8n_executions.png)
+**n8n 실행 기록 (게시판 저장 성공)**<br>
+<img src="images/16_n8n_executions.png" width="600">
 
 ## ④ 실행 방법
 
