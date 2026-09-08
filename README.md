@@ -28,9 +28,11 @@
 **n8n 워크플로우 전체 구조**<br>
 <img src="images/03_workflow_full.png" width="700">
 
-**메신저 알림 도착** (슬랙 · 디스코드 · 텔레그램)
+**메신저 알림 도착**
 
-<img src="images/04_slack.png" width="260"> <img src="images/05_discord.png" width="260"> <img src="images/06_telegram.png" width="260">
+| 슬랙 | 디스코드 | 텔레그램 |
+|---|---|---|
+| <img src="images/04_slack.png" width="260"> | <img src="images/05_discord.png" width="260"> | <img src="images/06_telegram.png" width="260"> |
 
 **MySQL 저장 결과**<br>
 <img src="images/07_mysql_select.png" width="700">
