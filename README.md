@@ -31,9 +31,15 @@
 ![워크플로우 전체](images/03_workflow_full.png)
 
 **메신저 알림 도착**
-| 슬랙 | 디스코드 | 텔레그램 |
-|---|---|---|
-| ![슬랙](images/04_slack.png) | ![디스코드](images/05_discord.png) | ![텔레그램](images/06_telegram.png) |
+
+슬랙
+![슬랙](images/04_slack.png)
+
+디스코드
+![디스코드](images/05_discord.png)
+
+텔레그램
+![텔레그램](images/06_telegram.png)
 
 **MySQL 저장 결과**
 ![MySQL SELECT](images/07_mysql_select.png)
@@ -42,17 +48,23 @@
 ![GET API 응답](images/08_get_api.png)
 
 **REST API 인증/검증**
-| API 키 없이 → 401 | 필수값 누락 → 400 |
-|---|---|
-| ![401](images/09_no_key_401.png) | ![400](images/10_missing_field_400.png) |
+
+API 키 없이 → 401
+![401](images/09_no_key_401.png)
+
+필수값 누락 → 400
+![400](images/10_missing_field_400.png)
 
 **n8n이 꺼져 있어도 죽지 않는 전송기**
 ![n8n 다운 시 에러 처리](images/11_n8n_down_error.png)
 
 **거부 기준 상수 변경 비교** (10 → 3)
-| 기준 10일 때 (레벨 3 → 허용) | 기준 3일 때 (레벨 3 → 거부) |
-|---|---|
-| ![before](images/12_threshold_before.png) | ![after](images/13_threshold_after.png) |
+
+기준 10일 때 (레벨 3 → 허용)
+![before](images/12_threshold_before.png)
+
+기준 3일 때 (레벨 3 → 거부)
+![after](images/13_threshold_after.png)
 
 **Code 노드 언어 함정**
 ![Python 실행 오류](images/14_python_error.png)
